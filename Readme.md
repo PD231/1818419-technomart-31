@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Павел Донцов](https://up.htmlacademy.ru/htmlcss/31/user/1818419).
-* Наставник: [Дмитрий Гуляев] (https://htmlacademy.ru/profile/dima).
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
