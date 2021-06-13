@@ -11,60 +11,66 @@
   <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body class="page-body">
+<body class="page-body ">
   <header class="main-header">
-    <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="image/logo.svg" width="220" heigh="47" alt="Логотип Техномарт">
+    <div class="main-header-nav ">
+      <nav class="main-navigation center">
+        <a class="main-header-logo">
+          <img src="image/logo.svg" width="220" heigh="47" alt="Логотип Техномарт">
+        </a>
+
+        <form action="http://echo.htmlacademy.ru" method="post">
+          <label for="search"><img src="image/icon-search.svg" width="17" heigh="17" alt="#">Поиск</label>
+          <input class="search" type="text" name="search" id="search">
+        </form>
+
+        <a class="click-icon-header" href="blank.html">
+          <img src="image/icon-bookmark.svg" width="14" heigh="16" alt="#">Закладки:0
+        </a>
+
+        <a class="click-icon-header" href="blank.html">
+          <img src="image/icon-cart.svg" width="15" heigh="15" alt="#">Корзина:0
+        </a>
+
+        <a href="blank.html">
+          <button class="place-an-order" type="button">Оформить заказ"</button>
+        </a>
+      </nav>
+    </div>
+
+    <div class="header-info center">
+      <h1 class="phrase">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+
+      <a class="phone" href="tel:+78005558628">
+        <img src="image/icon-phone.svg" width="19" heigh="19" alt="#">+7 800 555-86-28
       </a>
 
-      <form action="http://echo.htmlacademy.ru" method="post">
-        <label for="search"><img src="image/icon-search.svg" width="17" heigh="17" alt="#">Поиск</label>
-        <input class="search" type="text" name="search" id="search">
-      </form>
+      <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
 
-      <a class="click-icon-header" href="blank.html">
-        <img src="image/icon-bookmark.svg" width="14" heigh="16" alt="#">Закладки:0
-      </a>
+      <button class="head-button" type="button">
+        <img src="image/icon-login.svg" width="20" heigh="17" alt="#">Войти
+      </button>
 
-      <a class="click-icon-header" href="blank.html">
-        <img src="image/icon-cart.svg" width="15" heigh="15" alt="#">Корзина:0
-      </a>
+      <button class="head-button" type="button">Регистрация</button>
+    </div>
 
-      <a href="blank.html">
-        <button class="place-an-order" type="button">Оформить заказ"</button>
-      </a>
-    </nav>
-
-    <h1 class="phrase">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-
-    <a class="phone" href="tel:+78005558628">
-      <img src="image/icon-phone.svg" width="19" heigh="19" alt="#">+7 800 555-86-28
-    </a>
-
-    <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-
-    <button class="head-button" type="button">
-      <img src="image/icon-login.svg" width="20" heigh="17" alt="#">Войти
-    </button>
-
-    <button class="head-button" type="button">Регистрация</button>
-
-    <ul class="navigation">
-      <li><a class="nav-word" href="main.html">Главная</a></li>
-      <li><a class="nav-word" href="company.html">Компания</a></li>
-      <li><a class="nav-word" href="catolog.html">Каталог</a></li>
-      <li><a class="nav-word" href="news.html">Новости</a></li>
-      <li><a class="nav-word" href="specialoffer.html">Спецпредложение</a></li>
-      <li><a class="nav-word" href="delivery.html">Доставка</a></li>
-      <li><a class="nav-word" href="contacts.html">Контакты</a></li>
-    </ul>
-
+    <div class="center">
+      <ul class="navigation">
+        <li><a class="nav-word" href="main.html">Главная</a></li>
+        <li><a class="nav-word" href="company.html">Компания</a></li>
+        <li><a class="nav-word" href="catolog.html">Каталог</a></li>
+        <li><a class="nav-word" href="news.html">Новости</a></li>
+        <li><a class="nav-word" href="specialoffer.html">Спецпредложение</a></li>
+        <li><a class="nav-word" href="delivery.html">Доставка</a></li>
+        <li><a class="nav-word" href="contacts.html">Контакты</a></li>
+      </ul>
+    </div>
   </header>
 
   <main>
-    <section>
-      <ul>
+
+    <section class="main-content center">
+      <ul class="list">
         <li class="materials">
           <h2 class="name-head">Материалы</h2>
           <button class="button" type="button">На любой вкусс</button>
@@ -98,7 +104,7 @@
       </ul>
 
 
-      <ul class="list">
+      <ul class="list center">
         <li>
           <h2 class="name-slider">Дрели</h2>
           <p class="comments">Соседям на радость</p>
@@ -121,15 +127,14 @@
 
       <button class="dot1" type="button">точка серая</button>
       <button class="dot2" type="button">точка красная</button>
-
-
-
-
     </section>
 
-    <section>
-      <h2 class="popular">Популярные товары</h2>
-      <button class="button-other" type="button">Все популярные товары</button>
+
+    <section class="popular-goods center">
+      <div class="popular-goods-head">
+        <h2 class="popular">Популярные товары</h2>
+        <button class="button-other" type="button">Все популярные товары</button>
+      </div>
       <ul class="list">
         <li>
           <h3 class="name-products">Перфоратор Bosch BFG 9000</h3>
@@ -209,9 +214,12 @@
 
     </section>
 
-    <section>
-      <h2 class="popular">Популярные производители</h2>
-      <button class="button-other" type="button">Все порулярные производители</button>
+    <section class="popular-goods center">
+      <div class="popular-goods-head">
+        <h2 class="popular">Популярные производители</h2>
+        <button class="button-other" type="button">Все порулярные производители</button>
+      </div>
+
       <ul class="list">
         <li>
           <a href="main.html">
@@ -263,12 +271,12 @@
       </ul>
     </section>
 
-    <section class="advantages">
+    <section class="advantages center">
       <h2 class="head-advantages">Сервисы</h2>
       <p class="prase-advantages">Хороший интернет магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
-      <ul class="advantages list">
+      <ul class="list">
         <li>
           <button class="button-advantages" type="button">Доставка</button>
         </li>
@@ -284,7 +292,7 @@
     </section>
 
 
-    <ul class="advantages list">
+    <ul class="list center">
       <li>
         <h3 class="name-servis">Доставка</h3>
         <p class="prase-advantages">Мы с удовольствием доставим ваш товар прямо
@@ -312,31 +320,35 @@
     </ul>
 
 
-    <section>
-      <h2 class="head-advantages">Компания "Техномарт"</h2>
-      <p class="prase-advantages">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
-        строительства не оставит
-        равнодушными любителей сэкономить на гастарбайтерах.</p>
+    <section class="info-contacts center">
+      <div class="info">
+        <h2 class="head-advantages">Компания "Техномарт"</h2>
+        <p class="prase-advantages">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+          строительства не оставит
+          равнодушными любителей сэкономить на гастарбайтерах.</p>
 
-      <p class="prase-advantages"> Мы можем доставить ваш товар в самые отдаленные точки России!
-        Техномарт работает со многими транспортными компаниями:</p>
-      <ul class="list">
-        <li class="delivery-list">Деловые линии</li>
-        <li class="delivery-list">Автотрейдинг</li>
-        <li class="delivery-list">ЖелДорЭкспедиция</li>
-      </ul>
-      <button class="button-other" type="button">Подробнее о компании</button>
+        <p class="prase-advantages"> Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:</p>
+        <ul class="list">
+          <li class="delivery-list">Деловые линии</li>
+          <li class="delivery-list">Автотрейдинг</li>
+          <li class="delivery-list">ЖелДорЭкспедиция</li>
+        </ul>
+        <button class="button-other" type="button">Подробнее о компании</button>
+      </div>
 
+      <div class="contacts">
+        <h2 class="head-advantages">Контакты</h2>
+        <p class="prase-advantages">Вы можете забрать товар сами,
+          заехав в наш офис: </p>
+        <img src="image/map.png" width="300" heigh="158" alt="Карта">
+
+
+        <button class="button-other" type="button">Заблудились?напишите нам</button>
+      </div>
     </section>
 
-    <h2 class="head-advantages">Контакты</h2>
-    <p class="prase-advantages">Вы можете забрать товар сами,
-      заехав в наш офис: </p>
-    <img src="image/map.png" width="300" heigh="158" alt="Карта">
-
-
-    <button class="button-other" type="button">Заблудились?напишите нам</button>
-    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="form center" action="https://echo.htmlacademy.ru" method="post">
       <p>
         <label class="form-name" for="name">Ваше имя</label>
         <input type="text" name="date" id="name">
@@ -358,61 +370,78 @@
 
   <footer class="main-footer">
 
-
-    <a class="main-footer-logo">
-      <img src="image/logo.svg" width="220" heigh="68" alt="Логотип Техномарт">
-    </a>
-
-
-    <p class="footer-phrases"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-    <a class="footer-phrases" href="tel:+78005558628">+7 800 555-86-28</a>
-
-    <ul class="footer-phrases">
-      <li><a class="footer-word" href="blank.html">Компания</a></li>
-      <li><a class="footer-word" href="blank.html">Новости</a></li>
-      <li><a class="footer-word" href="blank.html">Каталог</a></li>
-      <li><a class="footer-word" href="blank.html">Доставка</a></li>
-      <li><a class="footer-word" href="blank.html">Контакты</a></li>
-    </ul>
-    <ul class="footer-phrases-other">
-      <li><a class="footer-word" href="blank.html">Материалы</a></li>
-      <li><a class="footer-word" href="blank.html">Техника</a></li>
-      <li><a class="footer-word" href="blank.html">Инструмент</a></li>
-      <li><a class="footer-word" href="blank.html">Спецпредложения</a></li>
-    </ul>
+    <div class="footer-phrases-up center">
+      <div class="column-up-1">
+        <a class="main-footer-logo">
+          <img src="image/logo.svg" width="220" heigh="68" alt="Логотип Техномарт">
+        </a>
 
 
-    <div class="footer-phrases-down">
-      <p>© 2010–2021 Компания «Техномарт» Все права защищены</p>
-      <ul class="list">
-        <li>
-          <a class="social-icon" href="#">
-            <img src="image/vk.svg" width="44" heigh="44" alt="#">
-          </a>
-        </li>
+        <p class="footer-phrases"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+        <a class="footer-phrases" href="tel:+78005558628">+7 800 555-86-28</a>
+      </div>
 
-        <li>
-          <a href="#">
-            <img src="image/inst.svg" width="44" heigh="44" alt="#">
-          </a>
-        </li>
+      <div class="column-up-2">
+        <ul class="footer-phrases list">
+          <li><a class="footer-word" href="blank.html">Компания</a></li>
+          <li><a class="footer-word" href="blank.html">Новости</a></li>
+          <li><a class="footer-word" href="blank.html">Каталог</a></li>
+          <li><a class="footer-word" href="blank.html">Доставка</a></li>
+          <li><a class="footer-word" href="blank.html">Контакты</a></li>
+        </ul>
 
-        <li>
-          <a href="#">
-            <img src="image/facebook.svg" width="44" heigh="44" alt="#">
-          </a>
-        </li>
-      </ul>
-
-      <p> Обратная связь:
-        <a class="footer-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-      </p>
-
-      <p> Разработано —
-        <a class="footer-address" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-      </p>
+        <ul class="footer-phrases-other list">
+          <li><a class="footer-word" href="blank.html">Материалы</a></li>
+          <li><a class="footer-word" href="blank.html">Техника</a></li>
+          <li><a class="footer-word" href="blank.html">Инструмент</a></li>
+          <li><a class="footer-word" href="blank.html">Спецпредложения</a></li>
+        </ul>
+      </div>
     </div>
 
+    <div class="footer-phrases-background">
+      <div class="footer-phrases-down center">
+
+        <div class="column-down-1">
+          <p>© 2010–2021 Компания «Техномарт» Все права защищены</p>
+        </div>
+
+        <div class="column-down-2">
+          <ul class="list">
+            <li>
+              <a class="social-icon" href="#">
+                <img src="image/vk.svg" width="44" heigh="44" alt="#">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="image/inst.svg" width="44" heigh="44" alt="#">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="image/facebook.svg" width="44" heigh="44" alt="#">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column-down-3">
+          <p> Обратная связь:
+            <a class="footer-address" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+        </div>
+
+        <div class="column-down-4">
+          <p> Разработано —
+            <a class="footer-address" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
   </footer>
 
 </body>

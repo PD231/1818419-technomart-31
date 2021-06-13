@@ -174,6 +174,8 @@
 
   .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
 
@@ -259,7 +261,7 @@
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    background-color: var(--basic-beige);
+
   }
 
   .name-products {
@@ -366,6 +368,7 @@
     font-size: 30px;
   line-height: 30px;
   font-weight: 400;
+  text-transform: uppercase;
   }
 
   /*main-catalog*/
@@ -387,14 +390,7 @@
   text-transform: uppercase;
   }
 
-  .popular {
-    color: var(--basic-light-blue);
-    text-transform: uppercase;
-    font-size: 30px;
-    line-height: 30px;
-    font-weight: 400;
-    background-color: var(--basic-beige-bg);
-  }
+
 
   .filtr a {
     font-family: "PT Sans", Arial, sans-serif;
@@ -504,7 +500,7 @@
     text-decoration: none;
   }
 
-  .footer-phrases-down {
+  .footer-phrases-background  {
     font-size: 16px;
     line-height: 18px;
    color: var(--basic-white);
@@ -527,3 +523,106 @@
     .footer-address:focus {
       color: var(--basic-red);
     }
+
+
+    /* Grid Header*/
+
+    .page {
+      height: 100%;
+    }
+
+    .page-body {
+      min-height: 100%;
+      display: grid;
+      grid-template-rows: min-content 1fr min-content;
+      align-content: start;
+    }
+
+    .center {
+      margin: 0 auto;
+      width: 1200px;
+      padding: 0 10px;
+    }
+
+    .main-header {
+      display:grid;
+      justify-content: stretch;
+    }
+
+    .main-header-nav {
+      background-color: var(--basic-blue);
+    }
+
+    .main-navigation {
+      display: grid;
+      grid-template-columns: 1fr 1fr 130px 130px 1fr;
+      height: 42px;
+      margin-top: 9px;
+    }
+
+    .header-info {
+      display: grid;
+      grid-template-columns: 197px 1fr 1fr min-content;
+      grid-template-rows: 1fr;
+      margin-top: 42px;
+    }
+
+    .address {
+      grid-column-start: 2;
+      grid-row-start: 2;
+    }
+
+    .navigation {
+      margin: 0;
+      padding: 0;
+    }
+
+
+     /* Grid Main*/
+
+     .main-content {
+      margin-top: 59px;
+     }
+
+
+     .popular-goods-head {
+      display: grid;
+      grid-template-columns: 1fr 192px;
+      grid-template-rows: 89px;
+      background-color: var(--basic-beige);
+      margin-top: 59px;
+     }
+
+     .advantages {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr;
+       margin-top: 70px;
+     }
+
+     .info-contacts {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       margin-top: 70px;
+       margin-bottom: 70px;
+       padding: 0;
+     }
+
+     /*Grid footer*/
+
+     .main-footer {
+       display: grid;
+      grid-template-rows: 1fr 1fr;
+     }
+
+     .footer-phrases-up {
+       display: grid;
+       grid-template-columns: 336px 1fr;
+       padding: 20px;
+     }
+
+     .footer-phrases-down {
+       display: grid;
+      grid-template-columns: 1fr 260px 260px 260px;
+      padding: 20px;
+     }
