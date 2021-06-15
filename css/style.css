@@ -148,11 +148,11 @@
     list-style: none;
   }
 
-  .nav-word:hover {
+  .item:hover {
     background-color: var(--light-black);
   }
 
-  .nav-word:focus {
+  .item:focus {
     color: var(--basic-grey);
     background-color: var(--light-black);
   }
