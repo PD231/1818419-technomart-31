@@ -24,9 +24,12 @@
           <input class="search" type="text" name="search" id="search">
         </form>
 
+
         <a class="click-icon-header" href="blank.html">
           <img src="image/icon-bookmark.svg" width="14" heigh="16" alt="#">Закладки:0
         </a>
+
+
 
         <a class="click-icon-header" href="blank.html">
           <img src="image/icon-cart.svg" width="15" heigh="15" alt="#">Корзина:0
@@ -40,13 +43,13 @@
 
     <div class="header-info center">
       <h1 class="phrase">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-
+    <div class="header-contact">
       <a class="phone" href="tel:+78005558628">
         <img src="image/icon-phone.svg" width="19" heigh="19" alt="#">+7 800 555-86-28
       </a>
 
       <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-
+    </div>
       <button class="head-button" type="button">
         <img src="image/icon-login.svg" width="20" heigh="17" alt="#">Войти
       </button>
@@ -69,8 +72,8 @@
 
   <main>
 
-    <section class="main-content center">
-      <ul class="list">
+    <section class="center">
+      <ul class="main-content list">
         <li class="materials">
           <h2 class="name-head">Материалы</h2>
           <button class="button" type="button">На любой вкусс</button>
@@ -101,32 +104,44 @@
           <button class="button" type="button">Бесплатно</button>
           <img src="image/car.svg" width="78" heigh="63" alt="#">
         </li>
-      </ul>
 
 
-      <ul class="list center">
-        <li>
+        <li class="slide-2">
           <h2 class="name-slider">Дрели</h2>
           <p class="comments">Соседям на радость</p>
           <button class="button-other" type="button">Открыть каталог</button>
-          <img src="image/second-man-slider.jpg" width="620" heigh="266" alt="картинка с дрелью">
+
+          <button class="arrow" type="button">
+            <img src="image/icon-left.svg" width="22" heigh="40" alt="#">
+          </button>
+
+          <button class="arrow" type="button">
+            <img src="image/icon-right.svg" width="22" heigh="40" alt="#">
+          </button>
+
+          <button class="dot1" type="button">точка серая</button>
+          <button class="dot2" type="button">точка красная</button>
         </li>
-        <li>
+        <li class="slide-1">
           <h2 class="name-slider">Перфораторы</h2>
           <p class="comments">Настоящие мужские игрушки</p>
           <button class="button-other" type="button">Открыть каталог</button>
-          <img src="image/first-man-slider.jpg" width="620" heigh="266" alt="картинка с перфоратором">
+
+          <button class="arrow" type="button">
+            <img src="image/icon-left.svg" width="22" heigh="40" alt="#">
+          </button>
+
+          <button class="arrow" type="button">
+            <img src="image/icon-right.svg" width="22" heigh="40" alt="#">
+          </button>
+
+          <button class="dot1" type="button">точка серая</button>
+          <button class="dot2" type="button">точка красная</button>
+
         </li>
       </ul>
-      <button type="button">
-        <img src="image/icon-left.svg" width="22" heigh="40" alt="#">
-      </button>
-      <button type="button">
-        <img src="image/icon-right.svg" width="22" heigh="40" alt="#">
-      </button>
 
-      <button class="dot1" type="button">точка серая</button>
-      <button class="dot2" type="button">точка красная</button>
+
     </section>
 
 
@@ -135,16 +150,19 @@
         <h2 class="popular">Популярные товары</h2>
         <button class="button-other" type="button">Все популярные товары</button>
       </div>
-      <ul class="list">
-        <li>
-          <h3 class="name-products">Перфоратор Bosch BFG 9000</h3>
-          <p>
-            <img src="image/bfg-9000.png" width="184" heigh="164" alt="длинный синий перфоратор">
-          </p>
-          <del class="old-price">32500 Р.</del>
-          <p class="price">25550 Р.</p>
 
-          <ul class="list">
+      <ul class="goods-cart-wrapper list">
+        <li class="goods-cart-img">
+          <div class="goods-cart">
+            <h3 class="name-products">Перфоратор Bosch BFG 9000</h3>
+            <p>
+              <img src="image/bfg-9000.png" width="184" heigh="164" alt="длинный синий перфоратор">
+            </p>
+            <del class="old-price">32500 Р.</del>
+            <p class="price">25550 Р.</p>
+          </div>
+
+          <ul class="goods-cart-button list">
             <li>
               <button class="button-buy" type="button"> <img src="image/icon-cart.svg" width="15" heigh="15"
                   alt="#">Купить</button>
@@ -152,18 +170,79 @@
             <li>
               <button class="button-bookmark" type="button">В закладки</button>
             </li>
+            <li>
+              <h3 class="name-products">Перфоратор Bosch BFG 9000</h3>
+              <del class="old-price">32500 Р.</del>
+              <p class="price">25550 Р.</p>
+            </li>
           </ul>
         </li>
 
-        <li>
-          <h3 class="name-products">Перфоратор Bosch BFG 3000</h3>
-          <p>
-            <img src="image/bfg-3000.png" width="127" heigh="112" alt="короткийсиний синий перфоратор">
+        <li class="goods-cart-img">
+          <div class="goods-cart">
+            <h3 class="name-products">Перфоратор Bosch BFG 3000</h3>
+            <p>
+              <img src="image/bfg-3000.png" width="127" heigh="112" alt="короткийсиний синий перфоратор">
+              <img src="image/new.png" width="70" heigh="70" alt="#">
+            </p>
+            <del class="old-price">22500 Р.</del>
+            <p class="price">15500 Р.</p>
+          </div>
+
+          <ul class="goods-cart-button list">
+            <li>
+              <button class="button-buy" type="button"> <img src="image/icon-cart.svg" width="15" heigh="15"
+                  alt="#">Купить</button>
+            </li>
+            <li>
+              <button class="button-bookmark" type="button">В закладки</button>
+            </li>
+            <li>
+              <h3 class="name-products">Перфоратор Bosch BFG 3000</h3>
+              <del class="old-price">22500 Р.</del>
+              <p class="price">15500 Р.</p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="goods-cart-img">
+          <div class="goods-cart">
+            <h3 class="name-products">Перфоратор Bosch BFG 6000</h3>
+            <p>
+              <img src="image/bfg-6000.png" width="144" heigh="128" alt="короткийсиний черно-синий перфоратор">
+            </p>
+            <del class="old-price">30500 Р.</del>
+            <p class="price">25500 Р. </p>
+          </div>
+
+          <ul class="goods-cart-button list">
+            <li>
+              <button class="button-buy" type="button"> <img src="image/icon-cart.svg" width="15" heigh="15"
+                  alt="#">Купить</button>
+            </li>
+            <li>
+              <button class="button-bookmark" type="button">В закладки</button>
+            </li>
+            <li>
+              <h3 class="name-products">Перфоратор Bosch BFG 6000</h3>
+              <del class="old-price">30500 Р.</del>
+              <p class="price">25500 Р. </p>
+            </li>
+          </ul>
+        </li>
+
+        <li class="goods-cart-img">
+          <div class="goods-cart">
+            <h3 class="name-products">Перфоратор Bosch BFG 2000</h3>
+
+            <img src="image/bfg-2000.png" width="127" heigh="112" alt="самый короткийсиний синий перфоратор">
             <img src="image/new.png" width="70" heigh="70" alt="#">
-          </p>
-          <del class="old-price">22500 Р.</del>
-          <p class="price">15500 Р.</p>
-          <ul class="list">
+
+            <del class="old-price">22500 Р.</del>
+            <p class="price">12500 Р. </p>
+          </div>
+
+          <ul class="goods-cart-button list">
             <li>
               <button class="button-buy" type="button"> <img src="image/icon-cart.svg" width="15" heigh="15"
                   alt="#">Купить</button>
@@ -171,42 +250,10 @@
             <li>
               <button class="button-bookmark" type="button">В закладки</button>
             </li>
-          </ul>
-        </li>
-
-        <li>
-          <h3 class="name-products">Перфоратор Bosch BFG 6000</h3>
-          <p>
-            <img src="image/bfg-6000.png" width="144" heigh="128" alt="короткийсиний черно-синий перфоратор">
-          </p>
-          <del class="old-price">30500 Р.</del>
-          <p class="price">25500 Р. </p>
-          <ul class="list">
             <li>
-              <button class="button-buy" type="button"> <img src="image/icon-cart.svg" width="15" heigh="15"
-                  alt="#">Купить</button>
-            </li>
-            <li>
-              <button class="button-bookmark" type="button">В закладки</button>
-            </li>
-          </ul>
-        </li>
-
-        <li>
-          <h3 class="name-products">Перфоратор Bosch BFG 2000</h3>
-
-          <img src="image/bfg-2000.png" width="127" heigh="112" alt="самый короткийсиний синий перфоратор">
-          <img src="image/new.png" width="70" heigh="70" alt="#">
-
-          <del class="old-price">22500 Р.</del>
-          <p class="price">12500 Р. </p>
-          <ul class="list">
-            <li>
-              <button class="button-buy" type="button"> <img src="image/icon-cart.svg" width="15" heigh="15"
-                  alt="#">Купить</button>
-            </li>
-            <li>
-              <button class="button-bookmark" type="button">В закладки</button>
+              <h3 class="name-products">Перфоратор Bosch BFG 2000</h3>
+              <del class="old-price">22500 Р.</del>
+              <p class="price">12500 Р. </p>
             </li>
           </ul>
         </li>
@@ -217,10 +264,10 @@
     <section class="popular-goods center">
       <div class="popular-goods-head">
         <h2 class="popular">Популярные производители</h2>
-        <button class="button-other" type="button">Все порулярные производители</button>
+        <button class="button-other" type="button">Все производители</button>
       </div>
 
-      <ul class="list">
+      <ul class="logo-manufacture list">
         <li>
           <a href="main.html">
             <img src="image/bosch.png" width="220" heigh="145" alt="лого BOSCH">
@@ -271,54 +318,59 @@
       </ul>
     </section>
 
-    <section class="advantages center">
-      <h2 class="head-advantages">Сервисы</h2>
-      <p class="prase-advantages">Хороший интернет магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+    <section class="advantages-bg">
 
-      <ul class="list">
-        <li>
-          <button class="button-advantages" type="button">Доставка</button>
-        </li>
+      <div class="advantages center">
 
-        <li>
-          <button class="button-advantages" type="button">Гарантии</button>
-        </li>
+        <h2 class="head-advantages">Сервисы</h2>
 
-        <li>
-          <button class="button-advantages" type="button">Кредит</button>
-        </li>
-      </ul>
+        <p class="prase-advantages">Хороший интернет магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+        <ul class="button-advantages-container list">
+          <li>
+            <button class="button-advantages" type="button">Доставка</button>
+          </li>
+
+          <li>
+            <button class="button-advantages" type="button">Гарантии</button>
+          </li>
+
+          <li>
+            <button class="button-advantages" type="button">Кредит</button>
+          </li>
+        </ul>
+
+
+
+        <ul class="list center">
+          <li class="servise-container">
+            <h3 class="name-servis">Доставка</h3>
+            <p class="prase-advantages">Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно!
+              Ведь мы неплохо заработаем,
+              поднимая его на ваш этаж!</p>
+            <img src="image/deliverycar.png" width="468" heigh="261" alt="Грузовик">
+          </li>
+          <li class="servise-container name-servis-guarantee">
+            <h3 class="name-servis">Гарантии</h3>
+            <p class="prase-advantages">Если купленный у нас товар поломается или заискрит,
+              а также в случае пожара, спровоцированного его возгоранием,
+              вы всегда можете быть уверены в нашей гарантии.
+              Мы обменяем сгоревший товар на новый.
+              Дом уж восстановите как-нибудь сами.</p>
+            <img src="image/medal.png" width="468" heigh="261" alt="медаль">
+          </li>
+          <li class="servise-container name-servis-debt">
+            <h3>Кредит</h3>
+            <p class="prase-advantages">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
+            </p>
+            <img src="image/debt-cash.png" width="468" heigh="261" alt="медаль">
+            <button class="button-other" type="button">отправить заявку</button>
+          </li>
+        </ul>
+      </div>
     </section>
-
-
-    <ul class="list center">
-      <li>
-        <h3 class="name-servis">Доставка</h3>
-        <p class="prase-advantages">Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
-          поднимая его на ваш этаж!</p>
-        <img src="image/deliverycar.png" width="468" heigh="261" alt="Грузовик">
-      </li>
-      <li>
-        <h3 class="name-servis">Гарантии</h3>
-        <p class="prase-advantages">Если купленный у нас товар поломается или заискрит,
-          а также в случае пожара, спровоцированного его возгоранием,
-          вы всегда можете быть уверены в нашей гарантии.
-          Мы обменяем сгоревший товар на новый.
-          Дом уж восстановите как-нибудь сами.</p>
-        <img src="image/medal.png" width="468" heigh="261" alt="медаль">
-      </li>
-      <li>
-        <h3 class="name-servis">Кредит</h3>
-        <p class="prase-advantages">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-        <img src="image/debt-cash.png" width="468" heigh="261" alt="медаль">
-        <button class="button-other" type="button">отправить заявку</button>
-      </li>
-
-    </ul>
-
 
     <section class="info-contacts center">
       <div class="info">
@@ -330,9 +382,11 @@
         <p class="prase-advantages"> Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:</p>
         <ul class="list">
-          <li class="delivery-list">Деловые линии</li>
-          <li class="delivery-list">Автотрейдинг</li>
-          <li class="delivery-list">ЖелДорЭкспедиция</li>
+          <li class="delivery-list"><img src="image/min-line.svg" width="25" heigh="2" alt="красная линия">Деловые линии
+          </li>
+          <li class="delivery-list"><img src="image/min-line.svg" width="25" heigh="2" alt="красная линия">Автотрейдинг
+          </li>
+          <li class="delivery-list"><img src="image/min-line.svg" width="25" heigh="2" alt="красная линия">ЖелДорЭкспедиция</li>
         </ul>
         <button class="button-other" type="button">Подробнее о компании</button>
       </div>
@@ -342,7 +396,6 @@
         <p class="prase-advantages">Вы можете забрать товар сами,
           заехав в наш офис: </p>
         <img src="image/map.png" width="300" heigh="158" alt="Карта">
-
 
         <button class="button-other" type="button">Заблудились?напишите нам</button>
       </div>
@@ -375,8 +428,6 @@
         <a class="main-footer-logo">
           <img src="image/logo.svg" width="220" heigh="68" alt="Логотип Техномарт">
         </a>
-
-
         <p class="footer-phrases"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         <a class="footer-phrases" href="tel:+78005558628">+7 800 555-86-28</a>
       </div>
@@ -407,7 +458,7 @@
         </div>
 
         <div class="column-down-2">
-          <ul class="list">
+          <ul class="column-down-2 list">
             <li>
               <a class="social-icon" href="#">
                 <img src="image/vk.svg" width="44" heigh="44" alt="#">
