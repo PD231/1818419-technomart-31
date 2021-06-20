@@ -19,9 +19,9 @@
           <img src="image/logo.svg" width="220" heigh="47" alt="Логотип Техномарт">
         </a>
 
-        <form action="http://echo.htmlacademy.ru" method="post">
+        <form class="search" action="http://echo.htmlacademy.ru" method="post">
           <label for="search"><img src="image/icon-search.svg" width="17" heigh="17" alt="#">Поиск</label>
-          <input class="search" type="text" name="search" id="search">
+          <input type="text" name="search" id="search">
         </form>
 
 
@@ -35,21 +35,22 @@
           <img src="image/icon-cart.svg" width="15" heigh="15" alt="#">Корзина:0
         </a>
 
+
         <a href="blank.html">
-          <button class="place-an-order" type="button">Оформить заказ"</button>
+          <button class="place-an-order" type="button">Оформить заказ</button>
         </a>
       </nav>
     </div>
 
     <div class="header-info center">
       <h1 class="phrase">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-    <div class="header-contact">
-      <a class="phone" href="tel:+78005558628">
-        <img src="image/icon-phone.svg" width="19" heigh="19" alt="#">+7 800 555-86-28
-      </a>
 
-      <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
-    </div>
+      <div class="header-contact">
+        <a class="phone" href="tel:+78005558628">
+          <img src="image/icon-phone.svg" width="19" heigh="19" alt="#">+7 800 555-86-28
+        </a>
+        <p class="address">г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+      </div>
       <button class="head-button" type="button">
         <img src="image/icon-login.svg" width="20" heigh="17" alt="#">Войти
       </button>
@@ -110,34 +111,11 @@
           <h2 class="name-slider">Дрели</h2>
           <p class="comments">Соседям на радость</p>
           <button class="button-other" type="button">Открыть каталог</button>
-
-          <button class="arrow" type="button">
-            <img src="image/icon-left.svg" width="22" heigh="40" alt="#">
-          </button>
-
-          <button class="arrow" type="button">
-            <img src="image/icon-right.svg" width="22" heigh="40" alt="#">
-          </button>
-
-          <button class="dot1" type="button">точка серая</button>
-          <button class="dot2" type="button">точка красная</button>
         </li>
         <li class="slide-1">
           <h2 class="name-slider">Перфораторы</h2>
           <p class="comments">Настоящие мужские игрушки</p>
           <button class="button-other" type="button">Открыть каталог</button>
-
-          <button class="arrow" type="button">
-            <img src="image/icon-left.svg" width="22" heigh="40" alt="#">
-          </button>
-
-          <button class="arrow" type="button">
-            <img src="image/icon-right.svg" width="22" heigh="40" alt="#">
-          </button>
-
-          <button class="dot1" type="button">точка серая</button>
-          <button class="dot2" type="button">точка красная</button>
-
         </li>
       </ul>
 
@@ -350,7 +328,7 @@
               к вашему подъезду совершенно бесплатно!
               Ведь мы неплохо заработаем,
               поднимая его на ваш этаж!</p>
-            <img src="image/deliverycar.png" width="468" heigh="261" alt="Грузовик">
+
           </li>
           <li class="servise-container name-servis-guarantee">
             <h3 class="name-servis">Гарантии</h3>
@@ -359,13 +337,13 @@
               вы всегда можете быть уверены в нашей гарантии.
               Мы обменяем сгоревший товар на новый.
               Дом уж восстановите как-нибудь сами.</p>
-            <img src="image/medal.png" width="468" heigh="261" alt="медаль">
+
           </li>
           <li class="servise-container name-servis-debt">
             <h3>Кредит</h3>
             <p class="prase-advantages">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
             </p>
-            <img src="image/debt-cash.png" width="468" heigh="261" alt="медаль">
+
             <button class="button-other" type="button">отправить заявку</button>
           </li>
         </ul>
@@ -382,11 +360,9 @@
         <p class="prase-advantages"> Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:</p>
         <ul class="list">
-          <li class="delivery-list"><img src="image/min-line.svg" width="25" heigh="2" alt="красная линия">Деловые линии
-          </li>
-          <li class="delivery-list"><img src="image/min-line.svg" width="25" heigh="2" alt="красная линия">Автотрейдинг
-          </li>
-          <li class="delivery-list"><img src="image/min-line.svg" width="25" heigh="2" alt="красная линия">ЖелДорЭкспедиция</li>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
         </ul>
         <button class="button-other" type="button">Подробнее о компании</button>
       </div>
@@ -400,24 +376,6 @@
         <button class="button-other" type="button">Заблудились?напишите нам</button>
       </div>
     </section>
-
-    <form class="form center" action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label class="form-name" for="name">Ваше имя</label>
-        <input type="text" name="date" id="name">
-      </p>
-
-      <p>
-        <label class="form-name" for="mail">Ваш e-mail:</label>
-        <input type="text" name="date" id="mail">
-      </p>
-
-      <p>
-        <label class="form-name" for="letter-text">Текст письма:</label>
-        <input type="text" name="date" id="letter-text">
-      </p>
-      <button class="button-other" type="submit">Отправить</button>
-    </form>
 
   </main>
 
@@ -486,7 +444,7 @@
         </div>
 
         <div class="column-down-4">
-          <p> Разработано —
+          <p>Разработано —
             <a class="footer-address" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
           </p>
         </div>
@@ -494,6 +452,27 @@
       </div>
     </div>
   </footer>
+
+  <!-- >Всплывающие окно -->
+  <div class="form-container">
+    <form class="form center" action="https://echo.htmlacademy.ru" method="post">
+      <p>
+        <label class="form-name" for="name">Ваше имя:</label>
+        <input type="text" name="date" id="name">
+      </p>
+
+      <p>
+        <label class="form-name" for="mail">Ваш e-mail:</label>
+        <input type="text" name="date" id="mail">
+      </p>
+
+      <p class="send">
+        <label  for="letter-text">Текст письма:</label>
+        <input type="text" name="date" id="letter-text">
+      </p>
+      <button class="button-other" type="submit">Отправить</button>
+    </form>
+  </div>
 
 </body>
 
