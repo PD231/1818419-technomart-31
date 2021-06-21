@@ -149,18 +149,16 @@
   }
 
   .head-button-catalog {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: block;
     color: var(--basic-black);
     font-size: 21px;
     line-height: 21px;
     background-color: var(--basic-white);
     border: none;
     text-decoration: none;
-    height: 45px;
-    width: max-content;
+    min-height: 45px;
     padding: 0 15px;
+
   }
 
   .personal-container {
@@ -238,27 +236,29 @@
   background-color: var(--special-yellow);
   list-style: none;
   min-width: 300px;
-  height: 123px;
+  min-height: 123px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: flex-start;
   }
 
   .instrumentals {
     background-color: var(--light-blue);
     list-style: none;
     min-width: 300px;
-    height: 123px;
+    min-height: 123px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 
   .technics {
     background-color: var(--basic-pink);
     list-style: none;
     min-width: 300px;
-    height: 123px;
+    min-height: 123px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -269,7 +269,7 @@
     background-color: var(--light-green);
     list-style: none;
     min-width: 300px;
-    height: 123px;
+    min-height: 123px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -281,7 +281,7 @@
     background-color: var(--special-yellow);
     list-style: none;
     min-width: 300px;
-    height: 123px;
+    min-height: 123px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -336,7 +336,7 @@
     text-transform: uppercase;
     font-weight: 400;
     min-width: 192px;
-    height: 38px;
+    min-height: 38px;
   }
 
   .popular {
@@ -437,7 +437,7 @@
     line-height: 24px;
     font-weight: 400;
     width: max-content;
-    height: 49px;
+    min-height: 49px;
     grid-column: 1/-1;
     grid-row: 2;
     margin: 0;
@@ -447,7 +447,7 @@
 
   .servise-container .prase-advantages {
     width: 300px;
-    height: 99px;
+    min-height: 99px;
 
   }
 
@@ -457,7 +457,7 @@
     flex-direction: column;
     justify-content: center;
     width: 240px;
-    height: 279px;
+    min-height: 279px;
     grid-column: 1;
     grid-row: 3;
     margin-right: 80px;
@@ -470,7 +470,7 @@
   line-height: 30px;
   font-weight: 700;
   width: 240px;
-  height: 61px;
+  min-height: 61px;
   }
 
   .button-advantages:hover {
@@ -491,7 +491,7 @@
     font-weight: 400;
     text-transform: uppercase;
     width: max-content;
-    height: 30px;
+    min-height: 30px;
     grid-column: 1/-1;
     grid-row: 1;
     margin-top: 64px;
@@ -515,6 +515,13 @@
     font-family: "PT Sans", Arial, sans-serif;
     background-color: var(--miidle-beige);
     text-transform: uppercase;
+    grid-column: 2;
+    grid-row: 3;
+    font-weight: 400;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
   }
 
   .sort-name {
@@ -523,7 +530,7 @@
     font-family: "PT Sans", Arial, sans-serif;
     background-color: var(--miidle-beige);
     text-transform: uppercase;
-    height: 38px;
+    min-height: 38px;
     display: flex;
     align-items: center;
     margin-top: 0;
@@ -595,7 +602,7 @@
   text-transform: uppercase;
   border-color: var(--basic-dark-transparent);
   min-width: 38px;
-  height: 38px;
+  min-height: 38px;
   margin-right: 10px;
   }
 
@@ -753,19 +760,19 @@
 
     .head-button {
       width: 121px;
-      height: 45px;
+      min-height: 45px;
       margin: 41px 0 0 69px;
     }
 
     .main-content .button {
       width: 135px;
-      height: 38px;
+      min-height: 38px;
     }
 
     .head-button:last-child {
       margin: 41px 0 0 10px;
       width: 150px;
-      height: 45px;
+      min-height: 45px;
     }
 
 
@@ -773,7 +780,7 @@
     .navigation {
       display: flex;
       justify-content: space-around;
-      height: 60px;
+      min-height: 60px;
       margin-top: 40px;
       margin-bottom: 60px;
       padding: 0;
@@ -794,7 +801,11 @@
       grid-template-columns: 300px 300px 300px;
       padding: 0;
       gap: 20px;
+     }
 
+     .main-content img {
+       align-self: flex-end;
+       justify-self: flex-start;
      }
 
       .slide-2 {
@@ -806,36 +817,38 @@
         display: none;
         grid-column: 1/2;
         grid-row: 2/4;
+        background-repeat: no-repeat ;
       }
 
       .slide-1 {
         background-image: url('../image/first-man-slider.jpg');
         min-width: 620px;
-        height: 266px;
+        min-height: 266px;
         margin: 0;
         padding: 0;
         grid-column: 1/2;
         grid-row: 2/4;
+        background-repeat: no-repeat ;
       }
 
 
       .name-slider {
         min-width: 240px;
-        height: 36px;
+        min-height: 36px;
         margin: 0;
         padding: 0;
       }
 
       .comments {
         width: inherit;
-        height: 24px;
+        min-height: 24px;
         margin: 0;
         padding: 0;
       }
 
      .main-catalog {
       display: grid;
-      grid-template-columns: 220px 1fr;
+      grid-template-columns: 220px 220px 1fr;
       margin-top: 21px;
      }
 
@@ -856,7 +869,7 @@
       margin-top: 20px;
       grid-row-start: 2;
       width: 100%;
-      height: 89px;
+      min-height: 89px;
       display: flex;
       align-items: center;
       margin-bottom: 20px;
@@ -866,16 +879,16 @@
      .filtr {
       display: flex;
       justify-content: space-around;
-      grid-column: 2/-1;
+      grid-column: 3/-1;
       grid-row: 3;
-      height: 38px;
+      min-height: 38px;
      }
 
      .filtr .list {
        display: flex;
-       height: 38px;
+       min-height: 38px;
        align-items: center;
-       grid-column: 2/-1;
+       grid-column: 3/-1;
        grid-row: 3;
      }
 
@@ -892,7 +905,7 @@
      }
 
      .popular-goods {
-       grid-column: 2;
+       grid-column: 2/-1;
        margin-top: 28px;
        grid-row-start: 4/-1;
 
@@ -902,7 +915,7 @@
      .popular-goods-head {
       display: flex;
       width:940px;
-      height: 89px;
+      min-height: 89px;
       justify-content: space-between;
       background-color: var(--basic-beige);
       margin-top: 59px;
@@ -910,7 +923,7 @@
      }
 
      .popular-goods-buttons {
-     outline: 1px solid black;
+
      display: flex;
      margin-top: 48px;
      margin-bottom: 59px;
@@ -952,7 +965,7 @@
 
      .advantages {
        width: 940px;
-       height: 522px;
+       min-height: 522px;
        display: grid;
        grid-template-columns: 320px 1fr;
        grid-template-rows: 100px 100px 1fr;
@@ -983,7 +996,7 @@
       justify-content: flex-start;
       align-items: flex-start;
       width: 619px;
-      height: 283px;
+      min-height: 283px;
       grid-column-start: 2;
       grid-row-start: 3;
       margin-bottom: 0;
@@ -1027,7 +1040,7 @@
 
      .contacts {
      width: 310px;
-     height: 356px;
+     min-height: 356px;
      padding: 0;
      margin-right: 0;
     }
