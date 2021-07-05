@@ -456,7 +456,7 @@
     justify-content: space-between;
     margin-left: 52px;
     position: relative;
-    margin-top: 2px;
+    margin-top: 3px;
   }
 
   .personal-button {
@@ -464,7 +464,7 @@
     line-height: 18px;
     text-decoration: none;
     color: var(--basic-light-blue);
-
+    margin-left: 0px;
   }
 
   .personal-button-wrap::after {
@@ -674,7 +674,7 @@
     line-height: 30px;
     padding-left: 23px;
     margin-bottom: 14px;
-    margin-top: 20px;
+    margin-top: 22px;
   }
 
   .button {
@@ -774,7 +774,7 @@
     margin: 0;
     padding: 0;
     margin-top: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     flex-shrink: 1;
   }
 
@@ -794,7 +794,8 @@
     line-height: 30px;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
+    margin-top: -2px;
   }
 
   .advantages ul:last-of-type {
@@ -1195,6 +1196,12 @@
     line-height: 18px;
   }
 
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
   .price-controls p {
     display: block;
     width: 20px;
@@ -1531,6 +1538,19 @@
     margin-top: 1px;
   }
 
+  .address-catalog {
+    display: block;
+    min-width: 259px;
+    height: 24px;
+    align-self: flex-end;
+    color: var(--basic-light-blue);
+    font-size: 14px;
+    font-style: normal;
+    margin: 0;
+    margin-right: 7px;
+    margin-top: 2px;
+  }
+
   .main-content .button {
     width: 135px;
     min-height: 38px;
@@ -1567,13 +1587,13 @@
     border: none;
   }
 
-  .button-dot-active {
+  .button-dot-two {
     background: none;
     border: none;
     padding: 0;
     content: "";
     position: absolute;
-    background-color: var(--basic-red);
+    background-color: var(--basic-white);
     background-repeat: no-repeat;
     width: 8px;
     height: 8px;
@@ -1585,7 +1605,7 @@
     cursor: pointer;
   }
 
-  .button-dot-passive {
+  .button-dot-one {
     background: none;
     border: none;
     padding: 0;
@@ -1603,9 +1623,9 @@
     cursor: pointer;
   }
 
-
-
-
+  .dot-active {
+    background-color: var(--basic-red);
+  }
 
   .comments {
     width: 100%;
@@ -1627,7 +1647,7 @@
     position: absolute;
     background-image: url("../image/icon-right.svg");
     background-repeat: no-repeat;
-    right: 21px;
+    right: 20px;
     top: 122px;
     transform: rotate(180deg);
     cursor: pointer;
@@ -1643,7 +1663,7 @@
     background-image: url("../image/icon-right.svg");
     background-repeat: no-repeat;
     top: 122px;
-    left: 21px;
+    left: 24px;
     cursor: pointer;
   }
 
@@ -1780,6 +1800,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 10px;
+    padding-top: 2px;
   }
 
 
@@ -1794,7 +1816,7 @@
     flex-direction: column;
     align-items: center;
     width: 184px;
-    min-height: 172px;
+    min-height: 174px;
     display: none;
   }
 
@@ -1898,7 +1920,6 @@
     background-color: var(--basic-red);
     border-radius: 5px 1.5px 1.5px 5px;
     margin: 0;
-    margin-right: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -2033,8 +2054,8 @@
     height: 285px;
     margin: 0;
     padding: 0;
-    right: 0;
-    top: 22px;
+    right: 1px;
+    top: 18px;
   }
 
   .name-service-guarantee::after {
@@ -2451,7 +2472,7 @@
     min-height: 282px;
   }
 
-  .form-container-catalog Ul {
+  .form-container-catalog ul {
     display: flex;
     flex-wrap: wrap;
     background-color: var(--basic-beige-bg);
@@ -2486,28 +2507,32 @@
     width: 192px;
     min-height: 38px;
     margin: 37px 0;
-    background-color: var(--basic-white);
-    color: var(--basic-black);
+    background-color: var(--basic-red);
+    color: var(--basic-white);
     font-family: "Cuprum", Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     font-weight: 400;
   }
 
+
   .form-catalog li:first-child {
     margin-right: 10px;
     margin-left: 114px;
   }
 
-  .form-catalog .button-other:hover {
-    background-color: var(--basic-red);
-    color: var(--basic-white);
-  }
-
-  .form-catalog .button-other:active,
-  .form-catalog .button-other:focus {
-    background-color: var(--basic-red-button-focus);
-    color: var(--basic-white);
+  .form-catalog .button-other-white {
+    width: 192px;
+    min-height: 38px;
+    margin: 37px 0;
+    background-color: var(--basic-white);
+    color: var(--basic-black);
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
   }
 
   .button-close-catalog {
