@@ -307,10 +307,10 @@
     font-weight: 700;
     line-height: 30px;
     text-decoration: none;
-    width: 146px;
+    width: 170px;
     min-height: 30px;
     border: 3px solid var(--basic-white);
-    padding: 4px 47px 5px 71px;
+    padding: 4px 23px 5px 71px;
     position: relative;
     margin-left: 25px;
   }
@@ -421,6 +421,9 @@
 
 
   .icon-user {
+    background: none;
+    border: none;
+    background-image: url("../image/icon-user.svg");
     width: 20px;
     height: 18px;
     opacity: 0.3;
@@ -428,7 +431,9 @@
   }
 
   .icon-login {
-    display: block;
+    background: none;
+    border: none;
+    background-image: url("../image/icon-login.svg");
     width: 20px;
     height: 17px;
     opacity: 0.3;
@@ -1497,7 +1502,7 @@
   .main-header-nav {
     background-color: var(--basic-blue);
     min-height: 42px;
-    box-shadow: 0 -5px 0 0 var(--basic-white) inset;
+    box-shadow: 0 -5px 0 0 var(--basic-beige-bg) inset;
   }
 
   .header-info {
@@ -2180,13 +2185,13 @@
 
   .footer-phrases-up {
     display: grid;
-    grid-template-columns: 335px 1fr;
+    grid-template-columns: 380px 1fr;
     min-height: 192px;
 
   }
 
   .column-up-1 .footer-phrases:first-of-type {
-    width: 335px;
+    width: 380px;
     margin: 0;
     margin-top: 17px;
     margin-left: 2px;
