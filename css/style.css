@@ -442,8 +442,10 @@
 
 
   .icon-user {
+    display: block;
     background: none;
     border: none;
+    content: "";
     background-image: url("../image/icon-user.svg");
     width: 20px;
     height: 18px;
@@ -452,6 +454,7 @@
   }
 
   .icon-login {
+    display: block;
     background: none;
     border: none;
     background-image: url("../image/icon-login.svg");
@@ -1318,6 +1321,9 @@
     margin-right: 10px;
   }
 
+  .filtr-button button:active path {
+    fill: var(--basic-red);
+  }
 
   .filtr path {
     fill: var(--basic-grey);
@@ -1899,7 +1905,7 @@
     background-color: var(--basic-light-green);
   }
 
-  .button-buy:focus {
+  .button-buy:active {
     background-color: var(--basic-dark-green);
   }
 
@@ -1923,7 +1929,7 @@
     border-color: var(--basic-light-blue);
   }
 
-  .button-bookmark:focus {
+  .button-bookmark:active {
     border-color: var(--basic-grey);
     color: var(--basic-grey);
   }

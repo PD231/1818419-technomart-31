@@ -53,13 +53,13 @@
       <div class="personal-container">
         <ul class="head-button-container list">
           <li>
-            <button class="icon-user" type="image" alt="Пользователь"></button>
+            <a href="blank.html" class="icon-user" aria-label="ссылка на профайл"></a>
           </li>
           <li>
             <a class="head-button-catalog" href="blank.html">Равшан Джамшутович</a>
           </li>
           <li>
-            <button class="icon-login" type="image" alt="Выход из личного кабинета"></button>
+            <a href="blank.html" class="icon-login" aria-label="выход — на страницу деавторизации"></a>
           </li>
       </ul>
         <ul class="personal-button-wrap item list">
@@ -82,6 +82,9 @@
       </ul>
     </nav>
   </header>
+
+
+
 
   <main>
 
@@ -116,14 +119,14 @@
         <li>
           <ul class="list">
             <li class="filtr-button">
-              <button type="button">
+              <button type="button" aria-label="сортировка по возрастанию">
                 <svg aria-hidden="true" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 0L11 10L0 10" fill="#EE3643" />
                 </svg>
               </button>
             </li>
             <li class="filtr-button">
-              <button type="button">
+              <button type="button" aria-label="сортировка по убыванию">
                 <svg aria-hidden="true" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.5 10L0 0H11" fill="#C5C5C5" />
                 </svg>
@@ -147,9 +150,9 @@
               <div class="toggle toggle-max"></div>
             </div>
             <div class="price-controls">
-              <input type="number" name="min-price" value="0">
+              <input type="number" name="min-price" value="0" min="0" max="30000">
               <p>&mdash;</p>
-              <input type="number" name="max-price" value="30000">
+              <input type="number" name="max-price" value="30000" min="0" max="30000">
             </div>
           </div>
         </fieldset>
@@ -204,8 +207,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products">Перфоратор <span class="caps">Bosch bfg 6000</span></h3>
-            <del class="old-price">30500 Р.</del>
-            <p class="price">25500 Р.</p>
+            <del class="old-price" aria-label="старая цена 30500 рублей">30500 Р.</del>
+            <p class="price" aria-label="новая цена 25500 рублей">25500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-6000.png" width="144" height="128" alt="Средний перфоратор">
             </div>
@@ -219,8 +222,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products">Перфоратор <span class="caps">Bosch bfg 6000</span></h3>
-            <del class="old-price">30500 Р.</del>
-            <p class="price">25500 Р.</p>
+            <del class="old-price" aria-label="старая цена 30500 рублей">30500 Р.</del>
+            <p class="price" aria-label="новая цена 25500 рублей">25500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-6000.png" width="144" height="128" alt="Средний перфоратор">
             </div>
@@ -234,8 +237,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products  new">Перфоратор <span class="caps">Bosch bfg 6000</span></h3>
-            <del class="old-price">30500 Р.</del>
-            <p class="price">25500 Р.</p>
+            <del class="old-price" aria-label="старая цена 30500 рублей">30500 Р.</del>
+            <p class="price" aria-label="новая цена 25500 рублей">25500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-6000.png" width="144" height="128" alt="Средний перфоратор">
             </div>
@@ -249,8 +252,8 @@
 
            <li class="goods-cart" tabindex="0">
             <h3 class="name-products  new">Перфоратор <span  class="caps">Bosch bfg 3000</span></h3>
-            <del class="old-price">22500 Р.</del>
-            <p class="price">15500 Р.</p>
+            <del class="old-price" aria-label="старая цена 22500 рублей">22500 Р.</del>
+            <p class="price" aria-label="новая цена 15500 рублей">15500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-3000.png" width="127" height="112" alt="Стандартный перфоратор">
             </div>
@@ -264,8 +267,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products">Перфоратор <span class="caps">Bosch bfg 6000</span></h3>
-            <del class="old-price">30500 Р.</del>
-            <p class="price">25500 Р.</p>
+            <del class="old-price" aria-label="старая цена 30500 рублей">30500 Р.</del>
+            <p class="price" aria-label="новая цена 25500 рублей">25500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-6000.png" width="144" height="128" alt="Средний перфоратор">
             </div>
@@ -279,8 +282,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products  new">Перфоратор <span class="caps">Bosch bfg 2000</span></h3>
-            <del class="old-price visible">22500 Р.</del>
-            <p class="price">12500 Р.</p>
+            <del class="old-price visible" aria-label="старая цена 22500 рублей">22500 Р.</del>
+            <p class="price" aria-label="новая цена 12500 рублей">12500 Р.</p>
             <div class="goods-image goods-image-catalog">
             <img src="image/bfg-2000.png" width="127" height="112" alt="Маленький перфоратор">
           </div>
@@ -294,8 +297,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products  new">Перфоратор <span  class="caps">Bosch bfg 3000</span></h3>
-            <del class="old-price">22500 Р.</del>
-            <p class="price">15500 Р.</p>
+            <del class="old-price" aria-label="старая цена 22500 рублей">22500 Р.</del>
+            <p class="price" aria-label="новая цена 15500 рублей">15500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-3000.png" width="127" height="112" alt="Стандартный перфоратор">
             </div>
@@ -310,8 +313,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products">Перфоратор <span class="caps">Bosch bfg 6000</span></h3>
-            <del class="old-price">30500 Р.</del>
-            <p class="price">25500 Р.</p>
+            <del class="old-price" aria-label="старая цена 30500 рублей">30500 Р.</del>
+            <p class="price" aria-label="новая цена 25500 рублей">25500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-6000.png" width="144" height="128" alt="Средний перфоратор">
             </div>
@@ -325,8 +328,8 @@
 
           <li class="goods-cart" tabindex="0">
             <h3 class="name-products  new">Перфоратор <span class="caps">Bosch bfg 2000</span></h3>
-            <del class="old-price visible">22500 Р.</del>
-            <p class="price">12500 Р.</p>
+            <del class="old-price visible" aria-label="старая цена 22500 рублей">22500 Р.</del>
+            <p class="price" aria-label="новая цена 12500 рублей">12500 Р.</p>
             <div class="goods-image goods-image-catalog">
               <img src="image/bfg-2000.png" width="127" height="112" alt="Маленький перфоратор">
             </div>
@@ -343,16 +346,16 @@
 
         <ul class="popular-goods-buttons list">
           <li>
-            <button class="button-page" type="button">1</button>
+            <button class="button-page" type="button" aria-label="номер страницы 1">1</button>
           </li>
           <li>
-            <button class="button-page" type="button">2</button>
+            <button class="button-page" type="button" aria-label="номер страницы 2">2</button>
           </li>
           <li>
-            <button class="button-page" type="button">3</button>
+            <button class="button-page" type="button" aria-label="номер страницы 3">3</button>
           </li>
           <li>
-            <button class="batton-show button-page" type="button">Следующая</button>
+            <button class="batton-show button-page" type="button" aria-label="следующая страница">Следующая</button>
           </li>
         </ul>
       </section>
@@ -382,7 +385,7 @@
         <a href="index.html" class="main-footer-logo">
           <img src="image/logo.svg" width="220" height="68" alt="Логотип Техномарт">
         </a>
-        <p class="footer-phrases"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
+        <p class="footer-phrases" aria-label="Мы находимся по адресу г. Санкт-Петербург, наб. Реки Карповки, 5 лит П"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
         <a class="footer-phone" href="tel:+78005558628">+7 800 555-86-28</a>
       </div>
 
