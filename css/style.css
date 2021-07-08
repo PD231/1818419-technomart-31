@@ -91,15 +91,36 @@
     cursor: pointer;
   }
 
+  .link-as-button {
+    color: var(--basic-white);
+    background-color: var(--basic-red);
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    font-weight: 400;
+    min-width: 192px;
+    min-height: 38px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 24px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .popular-goods-head .button-other {
     margin-right: 14px;
   }
 
-  .button-other:hover {
+  .button-other:hover,
+  .link-as-button:hover {
     background-color: var(--basic-red-button-hover);
   }
 
-  .button-other:focus {
+  .button-other:focus,
+  .link-as-button:focus {
     background-color: var(--basic-red-button-focus);
   }
 
@@ -1002,19 +1023,21 @@
   }
 
 
-
-
   .radio:checked + label:hover::after,
   .filter-item label:hover::before,
   .check:checked + label:hover::after {
     opacity: 1;
   }
 
+  .check:focus-within + label,
+  .radio:focus + label {
+    outline: 1px solid black;
+  }
+
   .check:disabled + label,
   .radio:disabled + label {
     opacity: 0.5;
   }
-
 
 
   .filter-item label::before {
@@ -1114,9 +1137,7 @@
     font-size: 13px;
     line-height: 18px;
     border-radius: 0;
-    outline: none;
     border: 1px solid var(--button-color-border);
-
   }
 
 
@@ -1239,10 +1260,9 @@
   .filtr button {
     background: none;
     border: none;
-    outline: none;
   }
 
-  .filtr a {
+  .filtr .type-filtr {
     font-family: "PT Sans", Arial, sans-serif;
     text-transform: uppercase;
     font-size: 13px;
@@ -1252,12 +1272,8 @@
     text-decoration: underline;
     text-decoration-style: dotted;
     text-decoration-color: var(--basic-red);
-
+    padding: 0;
   }
-
-
-
-
 
   .filtr ul {
     display: flex;
@@ -1305,6 +1321,7 @@
 
   .filtr path {
     fill: var(--basic-grey);
+    cursor: pointer;
   }
 
   .filtr path:hover {
@@ -1315,14 +1332,18 @@
     fill: var(--basic-red);
   }
 
-  .filtr a:hover {
+
+
+  .type-filtr:hover {
     color: var(--basic-black);
     text-decoration: underline;
     text-decoration-color: var(--basic-red);
+    cursor: pointer;
   }
 
-  .filtr a:active {
+  .type-filtr:active {
     color: var(--basic-red);
+    cursor: pointer;
   }
 
   .filter-head {
@@ -1338,6 +1359,8 @@
     line-height: 19px;
     text-transform: uppercase;
   }
+
+
 
   .price-range {
     font-family: "PT Sans", Arial, sans-serif;
@@ -1811,7 +1834,8 @@
 
 
 
-  .goods-cart:hover {
+  .goods-cart:hover,
+  .goods-cart:focus-within {
     box-shadow: 0 4px 20px 0 var(--basic-card-shadow);
     background-image: none;
   }
@@ -1825,11 +1849,13 @@
     display: none;
   }
 
-  .goods-cart:hover .goods-image  {
+  .goods-cart:hover .goods-image,
+  .goods-cart:focus-within .goods-image  {
     display: none;
   }
 
-  .goods-cart:hover .button-section  {
+  .goods-cart:hover .button-section,
+  .goods-cart:focus-within .button-section {
     display: flex;
   }
 
@@ -2198,7 +2224,7 @@
   }
 
   .column-up-2 {
-    margin-left: 58px;
+    margin-left: 16px;
   }
 
   .footer-phrases-other {

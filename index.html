@@ -9,20 +9,20 @@
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style.min.css" rel="stylesheet" type="text/css">
 </head>
 
 <body class="page-body">
   <header class="main-header">
     <div class="main-header-nav">
-      <nav class="main-navigation center">
+      <div class="main-navigation center">
         <a class="main-header-logo" href="index.html">
           <img src="image/logo.svg" width="220" heigh="47" alt="Логотип Техномарт">
         </a>
 
         <form class="search" action="http://echo.htmlacademy.ru" method="post">
           <input type="text" name="search" placeholder="Поиск:">
-          <svg class="svg-icon" width="17" height="17" viewBox="0 0 17 17" fill="none"
+          <svg class="svg-icon" aria-hidden="true" width="17" height="17" viewBox="0 0 17 17" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <g opacity="1">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -38,7 +38,7 @@
 
         <a class="place-an-order" href="blank.html">Оформить заказ</a>
 
-      </nav>
+      </div>
     </div>
 
     <div class="header-info center">
@@ -55,7 +55,7 @@
       <button class="head-button" type="button">Регистрация</button>
     </div>
 
-    <div class="navigation">
+    <nav class="navigation">
       <ul class="list">
         <li><a class="item" href="index.html">Главная</a></li>
         <li><a class="item" href="company.html">Компания</a></li>
@@ -65,7 +65,7 @@
         <li><a class="item" href="delivery.html">Доставка</a></li>
         <li><a class="item" href="contacts.html">Контакты</a></li>
       </ul>
-    </div>
+    </nav>
   </header>
 
   <main>
@@ -89,7 +89,7 @@
         <li class="slide slide-2">
           <h2 class="name-slider">Дрели</h2>
           <p class="comments">Соседям на радость</p>
-          <button class="button-other" type="button">Открыть каталог</button>
+          <a href="catalog.html" class="link-as-button">Открыть каталог</a>
           <button class="button-right" type="button" aria-label="Вправо"></button>
           <button class="button-left" type="button" aria-label="Влево"></button>
           <button class="button-dot-one" type="button" aria-label="неактивный слайд"></button>
@@ -99,7 +99,7 @@
         <li class="slide slide-1">
           <h2 class="name-slider">Перфораторы</h2>
           <p class="comments">Настоящие мужские игрушки</p>
-          <button class="button-other" type="button">Открыть каталог</button>
+          <a href="catalog.html" class="link-as-button">Открыть каталог</a>
           <button class="button-right" type="button" aria-label="Вправо"></button>
           <button class="button-left" type="button" aria-label="Влево"></button>
           <button class="button-dot-one" type="button" aria-label="неактивный слайд"></button>
@@ -128,12 +128,12 @@
       </div>
 
       <ul class="goods-cart-wrapper list">
-        <li class="goods-cart bfg-9000 ">
+        <li class="goods-cart" tabindex="0">
           <h3 class="name-products">Перфоратор <span class="caps">Bosch bfg 9000 </span></h3>
-          <del class="old-price">32500 Р.</del>
-          <p class="price">25550 Р.</p>
-          <div class="goods-image">
-            <img src="image/bfg-9000.png" width="184" height="164" alt="Перфоратор с длинным сверлом">
+          <del class="old-price" alt="старая цена">32500 Р.</del>
+          <p class="price" alt="новая цена со скидкой">25550 Р.</p>
+          <div class="goods-image" >
+            <img src="image/bfg-9000.png" width="184" height="164" alt="Перфоратор с длинным сверлом" >
           </div>
           <ul class="button-section list">
             <li>
@@ -143,7 +143,7 @@
           </ul>
         </li>
 
-        <li class="goods-cart bfg-3000">
+        <li class="goods-cart" tabindex="0">
           <h3 class="name-products  new">Перфоратор <span  class="caps">Bosch bfg 3000</span></h3>
           <del class="old-price">22500 Р.</del>
           <p class="price">15500 Р.</p>
@@ -158,7 +158,7 @@
           </ul>
         </li>
 
-        <li class="goods-cart bfg-6000">
+        <li class="goods-cart" tabindex="0">
           <h3 class="name-products">Перфоратор <span class="caps">Bosch bfg 6000</span></h3>
           <del class="old-price">30500 Р.</del>
           <p class="price">25500 Р.</p>
@@ -174,7 +174,7 @@
         </li>
         </li>
 
-        <li class="goods-cart bfg-2000">
+        <li class="goods-cart" tabindex="0">
           <h3 class="name-products  new">Перфоратор <span class="caps">Bosch bfg 2000</span></h3>
           <del class="old-price">22500 Р.</del>
           <p class="price">12500 Р.</p>
@@ -324,8 +324,10 @@
         <h2 class="head-advantages">Контакты</h2>
         <p class="phrase-advantages">Вы можете забрать товар сами,
           заехав в наш офис: </p>
-        <img src="image/map.png" width="300" height="158" alt="Карта">
-        <button class="button-other" type="button">Заблудились?напишите нам</button>
+          <a href="https://goo.gl/maps/Vp8uY98ifq2zh5rB7">
+            <img src="image/map.png" width="300" height="158" alt="Карта">
+          </a>
+        <button class="button-other" type="button" >Заблудились?напишите нам</button>
       </div>
     </section>
 
@@ -335,7 +337,7 @@
 
     <div class="footer-phrases-up center">
       <div class="column-up-1">
-        <a href="main.html" class="main-footer-logo">
+        <a href="index.html" class="main-footer-logo">
           <img src="image/logo.svg" width="220" height="68" alt="Логотип Техномарт">
         </a>
         <p class="footer-phrases"> г. Санкт-Петербург, наб. Реки Карповки, 5 лит П</p>
@@ -383,7 +385,7 @@
             </li>
 
             <li>
-              <a class="social-icon">
+              <a class="social-icon" href="#">
                 <img src="image/icon-insta.svg" width="21" height="21" alt="Логотип Instagram">
               </a>
             </li>
