@@ -1321,7 +1321,7 @@
     margin-right: 10px;
   }
 
-  .filtr-button button:active path {
+  .button-sort:active path {
     fill: var(--basic-red);
   }
 
