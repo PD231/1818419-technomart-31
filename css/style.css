@@ -239,6 +239,10 @@
     box-shadow: 0 -5px 0 0 var(--basic-logo-shadow) inset;
   }
 
+  .main-header-logo img:active {
+    background-color: var(--basic-red-button-focus);
+  }
+
   .click-icon-header {
     position: relative;
     text-decoration: none;
@@ -889,7 +893,8 @@
     border: none;
   }
 
-  .button-advantages:focus {
+  .button-advantages-active,
+  .button-advantages-active:hover {
     background-color: var(--basic-white);
     color: var(--basic-blue);
     border: none;
@@ -1220,12 +1225,23 @@
     padding: 0;
   }
 
+/* Убрать стрелочки цены */
+
   input[type="number"]::-webkit-outer-spin-button,
   input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
 
+  /* Убрать стрелочки цены */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]:hover,
+  input[type="number"]:focus {
+    -moz-appearance: number-input;
+  }
+/* ----------------------------- */
   .price-controls p {
     display: block;
     width: 20px;
@@ -1412,7 +1428,8 @@
   }
 
 
-  .button-page:focus {
+  .button-active-page,
+  .button-active-page:hover {
     border-color: var(--basic-red);
     background-color: var(--basic-red);
     color: var(--basic-white);
@@ -2032,7 +2049,7 @@
   }
 
   .advantages-bg-catalog .phrase-advantages {
-    min-width: 907px;
+    width: 930px;
     min-height: 74px;
     margin-bottom: 68px;
   }
